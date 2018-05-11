@@ -11,7 +11,17 @@
     <link rel="stylesheet" href="/static/adminLTE3/plugins/font-awesome/css/font-awesome.min.css">
     <!-- Theme style -->
     <link rel="stylesheet" href="/static/adminLTE3/dist/css/adminlte.min.css">
-    {{.HtmlHead}}
+
+    <!-- jQuery -->
+    <script src="/static/adminLTE3/plugins/jquery/jquery.min.js"></script>
+    <!-- Bootstrap 4 -->
+    <script src="/static/adminLTE3/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="/static/adminLTE3/dist/js/adminlte.min.js"></script>
+    <!-- vue> -->
+    <script src="/static/js/vue.min.js"></script>
+
+{{.HtmlHead}}
 </head>
 <body class="{{.BodyClass}}">
 
@@ -23,14 +33,6 @@
         </div>
     {{template "footer" .}}
 </div>
-
-
-<!-- jQuery -->
-<script src="/static/adminLTE3/plugins/jquery/jquery.min.js"></script>
-<!-- Bootstrap 4 -->
-<script src="/static/adminLTE3/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
-<!-- AdminLTE App -->
-<script src="/static/adminLTE3/dist/js/adminlte.min.js"></script>
 
 {{.Scripts}}
 </body>
